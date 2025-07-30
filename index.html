@@ -1,13 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villa</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,25 +15,27 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=News+Cycle:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+QLD:wght@100..400&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <div class="nav-div">
         <div class="icons">
           <div class="icon1">
-            <i class="fa fa-regular fa-envelope"> </i>
+            <i class="fas fa-envelope"></i>
             <h4>udheer@gmail.com</h4>
           </div>
           <div class="icon2">
-            <i class="fa fa-solid fa-address-book"></i> hyderabad,hitechcity
+            <i class="fas fa-address-book"></i>
+            <h4>Hyderabad, Hitech City</h4>
           </div>
         </div>
 
         <div class="social-icons">
-          <i class="oneicon fa-brands fa-facebook"></i>
-          <i class="oneicon fa-brands fa-twitter"></i>
-          <i class="oneicon fa-brands fa-instagram"></i>
-          <i class="oneicon fa-brands fa-linkedin"></i>
+          <i class="fab fa-facebook oneicon"></i>
+          <i class="fab fa-twitter oneicon"></i>
+          <i class="fab fa-instagram oneicon"></i>
+          <i class="fab fa-linkedin oneicon"></i>
         </div>
       </div>
       <hr />
@@ -42,18 +44,76 @@
           <div class="villaname">
             <h1>Villa</h1>
           </div>
-          <ol>
-            <a href="/"> <li>Home</li> </a
-            ><a href="/"> <li>Properties</li> </a
-            ><a href="/"> <li>Property Details</li> </a
-            ><a href="/">
-              <li>Contact us</li>
-            </a>
-          </ol>
-
-          <button class="button">sechdule a visit</button>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Properties</a></li>
+            <li><a href="/">Property Details</a></li>
+            <li><a href="/">Contact Us</a></li>
+          </ul>
+          <div><button class="button">Schedule a Visit</button></div>
         </div>
       </nav>
+      <div class="section-hero">
+        <div class="hero">
+          <h1 class="villa">Hurry</h1>
+          <h4 class="villa"><span>GET</span> THE BEST</h4>
+          <h4 class="villa">VILLA FOR YOU</h4>
+        </div>
+        <h4 class="Canada">Toronto, <span class="city">Canada</span></h4>
+      </div>
     </header>
+
+    <section class="section1">
+      <div class="container">
+        <div class="img-div">
+          <img
+            src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Modern sea-facing villa"
+          />
+        </div>
+        
+        <div class="details">
+          <div class="box1">
+            <div class="featured">
+              <h3 class="google">Featured</h3>
+              <h1 class="best">Best Apartment</h1>
+              <h1 class="best">& Sea View</h1>
+            </div>
+          </div>
+          <div class="box2 box">
+            <h1 class="google">Best Useful Links?</h1>
+            <h5>
+              Get <span class="google1">the best villa</span> website template
+              in HTML, CSS and Bootstrap for your business. TemplateMO provides
+              you the <span class="google1">best free CSS templates</span>
+              in the world. Please share with your friends!
+            </h5>
+            <hr />
+            <h5>How does this work?</h5>
+            <hr />
+            <h5>Why is Villa Agency the best?</h5>
+          </div>
+        </div>
+        
+        <div class="area">
+          <div class="feature-box">
+            <h5>250m²</h5>
+            <p>Total Flat Square</p>
+          </div>
+          <div class="feature-box">
+            <h5><i class="fas fa-file-signature"></i>Contract</h5>
+            <p>Contract Ready</p>
+          </div>
+          <div class="feature-box">
+            <h5><i class="fas fa-credit-card"></i>Payment</h5>
+            <p>Easy Payment Process</p>
+          </div>
+          <div class="feature-box">
+            <h5><i class="fas fa-shield-alt"></i>Safety</h5>
+            <p>24/7 Surveillance</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
