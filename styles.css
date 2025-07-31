@@ -731,6 +731,49 @@ footer {
   background-color: #000;
   color: white;
 }
+
+.sectionhero {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1681465766418-6474cfdcbb3c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.prop {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.all {
+  background-color: #d9dde1;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid black;
+  font-weight: 200;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.all:hover {
+  transform: scale(1.05);
+  background-color: hsl(61, 51%, 38%);
+}
+.all:first-child {
+  background-color: hsl(61, 51%, 38%);
+}
+
+.all:first-child:hover {
+  background-color: hsl(0, 0%, 95%);
+  color: #000;
+}
 /* Responsive Styles */
 @media (max-width: 992px) {
   .container {
@@ -783,6 +826,13 @@ footer {
   .map iframe {
     width: 100%;
     max-width: 450px;
+  }
+  .all {
+    width: 80px;
+    font-size: 17px;
+  }
+  .prop {
+    gap: 10px;
   }
 }
 
