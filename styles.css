@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: rgb(197, 29, 29);
+  background-color: rgb(252, 252, 252);
+  cursor: pointer;
 
   width: 100%;
   font-family: "Lato", sans-serif;
@@ -58,8 +59,6 @@ nav {
   background-color: bisque;
   padding: 10px;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0px;
 }
 
 .head-section {
@@ -482,7 +481,7 @@ span.city {
   transition: all 0.3s ease;
 }
 
-.space:hover{
+.space:hover {
   transform: scale(1.02);
 }
 
@@ -494,7 +493,7 @@ span.city {
   align-items: center;
 }
 
-img{
+img {
   height: 450px;
   width: 350px;
   object-fit: cover;
@@ -513,119 +512,224 @@ hr {
   font-size: 20px;
 }
 
-
 /* section  4 */
 
-.section4{
+.section4 {
   height: 100%;
   width: 100%;
   background-color: #e2d2d2;
   margin: 0px auto;
-    margin-top: 0;
+  margin-top: 0;
   padding-top: 0;
-  
 }
 
-.properties{
-
-padding: 60px;
+.properties {
+  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.youlike{
+.youlike {
   font-size: 40px;
 }
 
-.table{
-  margin: 5px auto;
-  height: 500px;
-  width: 400px;
-  border: 1px solid;
-  border-radius: 20px;
-  box-shadow: 0 0 10px black;
-  color: white;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-padding: 10px;
-gap: 22px;
-  align-items: center;
-
-
-}
-.money{
+.money {
   color: rgba(255, 166, 0, 0.726);
 }
 
-.title{
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bed h4,
+.villa h6,
+.money,
+.hehe {
+  font-size: 14px;
+}
+
+.bed {
+  display: flex;
+  gap: 20px;
   font-weight: 300;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.table:hover{
-  transform: scale(1.05);
-  
-  
+.table {
+  flex: 1 1 300px;
+  max-width: 320px;
+  min-width: 260px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
 }
-h1,h4{
+
+.table:hover {
+  transform: scale(1.03);
+}
+
+h1,
+h4 {
   color: #000000;
-  font-weight: 200;
 }
 
-.hehe{
+.hehe {
   color: black;
   font-size: 20px;
   font-weight: 200;
-  border: 1px solid saddlebrown ;
+  border: 1px solid saddlebrown;
   padding: 10px;
   border-radius: 10px;
   background-color: #eee;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-.villa{
+.villa {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+
   gap: 80px;
 }
 
-.maintable{
+.maintable {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
 }
 
-
-.img{
- 
-  height: 200px;
-  width: 350px;
- padding: 10px;
+.img {
+  width: 100%;
+  height: 180px;
   object-fit: cover;
- border-radius: 30px;
- 
-
+  border-radius: 15px;
 }
 
-.bed{
-  display: flex;
-  gap: 40px;
-}
-
-.button1{
+.button1 {
   border: 1px solid black;
   padding: 10px 15px;
   border-radius: 10px;
   color: #eee;
   background-color: #000000;
+}
+
+/*  section 5 */
+
+.section5 {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.touch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contactus h4 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.getin h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: -100px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.main {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+
+.main label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.main input,
+.main textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cc1818;
+  font-size: 14px;
+  resize: none;
+}
+
+.main textarea {
+  height: 200px;
+}
+
+.submit {
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #444;
+}
+
+.map iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 300px;
+}
+
+footer {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  color: white;
 }
 /* Responsive Styles */
 @media (max-width: 992px) {
@@ -669,6 +773,17 @@ h1,h4{
   .section3 {
     height: 100%;
   }
+  .form {
+    margin-top: -80px;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .main,
+  .map iframe {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -700,6 +815,30 @@ h1,h4{
   .videoinfo2 {
     flex-direction: column;
   }
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: -60px;
+  }
+
+  .main,
+  .map iframe {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .touch {
+    padding: 60px 15px;
+  }
+
+  .contactus h4 {
+    font-size: 24px;
+  }
+
+  .getin h5 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -725,5 +864,35 @@ h1,h4{
   }
   .videoinfo2 {
     flex-direction: column;
+  }
+  .form {
+    margin-top: -40px;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .main,
+  .map iframe {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .main input,
+  .main textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .submit {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contactus h4 {
+    font-size: 20px;
+  }
+
+  .getin h5 {
+    font-size: 18px;
   }
 }
