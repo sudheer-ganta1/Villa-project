@@ -774,6 +774,36 @@ footer {
   background-color: hsl(0, 0%, 95%);
   color: #000;
 }
+
+.nums {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.num1 {
+  color: #ccc;
+  background-color: #000;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.3s ease-in;
+}
+
+.num1:hover {
+  background-color: white;
+  transform: scale(1.06);
+  border: none;
+  color: #000;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .container {
@@ -828,11 +858,15 @@ footer {
     max-width: 450px;
   }
   .all {
-    width: 80px;
-    font-size: 17px;
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
   }
   .prop {
     gap: 10px;
+  }
+  li {
+    font-size: 14px;
   }
 }
 
